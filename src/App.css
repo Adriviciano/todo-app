@@ -1,0 +1,18 @@
+*{
+  margin: 0;
+  padding: 0;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+body{
+  background-color: #c7f9cc;
+}
+  
+.App {
+  text-align: center;
+}
+
+*::-webkit-scrollbar{
+  display: none;
+}
