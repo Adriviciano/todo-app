@@ -3,8 +3,9 @@ Gestor de tareas
 
 
 Web Application hecha con React que implementa una cola con prioridad para ordenar las tareas
-de más a menos prioritarias, hace uso de la cache del navegador para almacenar
-la lista.
+de más a menos prioritarias.
+
+Almacena los datos con MongoDB
 
 # Futuros cambios
 -Hacer que las tareas incluyan una descripcion.
