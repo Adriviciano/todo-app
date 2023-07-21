@@ -1,0 +1,29 @@
+.task{
+  margin: 2vw;
+  background: transparent;
+  width: 19vh;
+  height: 19vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 20px;
+  background-image: url("../../images/postit.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.task > h3{
+  padding: 3vh;
+  max-width: 13vh;
+  max-height: 13vh;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  transform: translateY(2vh) rotateZ(-5deg);
+}
+
+.taskSpacer{
+  height: 4vh;
+}
