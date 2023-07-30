@@ -7,6 +7,8 @@ import PriorityQueue from './utils/PriorityQueue';
 import AddTask from './components/addTask/AddTask.js';
 import EditTask from './components/editTask/EditTask';
 import TaskInfo from './components/taskInfo/TaskInfo';
+import Login from './components/login/Login';
+import Signup from './components/signup/Signup';
 import axios from 'axios';
 
 function App() {
@@ -28,7 +30,7 @@ function App() {
     console.log('Deleting ' + task)
     tasks.dequeue(task);
     setTasks(tasks);
-    await axios.put(`http://localhost:4000/api/users/${loggedUser}`, {tasks: JSON.stringify(tasks)})
+    await axios.put(`http://localhost:4000/api/users/${loggedUser}`, { tasks: JSON.stringify(tasks) })
     printTaskList();
   };
 
@@ -62,7 +64,7 @@ function App() {
 
   return (
     <div className="App">
-      <AppHeader/>
+      <AppHeader />
       <Routes>
         <Route path='/' element={
           <Body
@@ -70,6 +72,12 @@ function App() {
             removeTask={removeTask}
             user={loggedUser}
           />}
+        />
+        <Route path='/login' element={
+          <Login/>}
+        />
+        <Route path='/signup' element={
+          <Signup/>}
         />
         <Route path='/add' element={
           <AddTask

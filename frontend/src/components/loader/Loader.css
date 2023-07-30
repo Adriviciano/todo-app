@@ -24,20 +24,20 @@
   .loader::before {
     width: inherit;
     height: 0.2rem;
-    background-color: #9bb7fe;
+    background-color: #57cc99;
   }
   
   .loader::after {
     box-sizing: border-box;
     width: 50%;
     height: inherit;
-    border: 0.2rem solid #9bb7fe;
+    border: 0.2rem solid #57cc99;
     border-radius: 50%;
     left: 25%;
   }
   
   .loader div{
-    background-color: #9bb7fe;
+    background-color: #57cc99;
     position: absolute;
     width: 16rem;
     height: 0.2rem;
@@ -49,7 +49,7 @@
     position: absolute;
     width: 5%;
     height: 10%;
-    background-color: #cbbddb;
+    background-color: #7bf1a8;
     border-radius: 50%;
     bottom: 0.2rem;
     left: -5%;
@@ -60,7 +60,7 @@
   
   .loader span:nth-child(2){
     animation-delay: 0.075s;
-    background-color: #f5c494;
+    background-color: #7bf1a8;
   }
   
   .loader span:nth-child(3){

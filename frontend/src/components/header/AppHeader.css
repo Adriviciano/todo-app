@@ -28,6 +28,8 @@
   font-size: 300%;
   font-weight: bolder;
   color: #c7f9cc;
+  padding: 0;
+  margin: 0;
 }
 
 .container > button{
@@ -46,4 +48,9 @@ button:hover{
 
 .side{
   width: 25%;
+}
+
+svg{
+  width: 2em;
+  height: 2em;
 }

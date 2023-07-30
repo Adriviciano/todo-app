@@ -37,7 +37,7 @@ const TaskInfo = ({ user, remove }) => {
   if (loading) {
     console.log('Loading')
     return (
-      <Loader/>
+      <Loader />
     )
   } else {
     console.log('Loaded: ' + task.element)
@@ -47,8 +47,7 @@ const TaskInfo = ({ user, remove }) => {
           <div className='modal-background'></div>
         </Link>
         <div className='modal'>
-
-          <div className='modalTitle'>{task.element}</div>
+          <div className='modalTitle taskFullName'>{task.element}</div>
           <div>
             <div>Priority: {task.priority}</div>
           </div>
